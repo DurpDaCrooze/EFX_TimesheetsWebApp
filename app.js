@@ -14,7 +14,9 @@ const timeLog = (req, res, next) => {
 
 app.use(timeLog);
 
+console.log('Initializing routes...');
 app.use('/u', unsecure_routeHandler);
 app.use('/s', secure_routeHandler);
 
 app.listen(PORT);
+console.log('Server started on port: ', PORT);
