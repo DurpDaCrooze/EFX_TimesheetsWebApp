@@ -9,8 +9,6 @@ function ListGroup({items, heading}: Props){
 
     const [selectedIndex, setSelectedIndex] = useState(-1);
     
-
-
     const message = items.length === 0 ? <p>No items found!</p> : null;
     const messagebetter = items.length === 0 && <p>No items found!</p>;
 
@@ -19,9 +17,9 @@ function ListGroup({items, heading}: Props){
     };
 
     return(
-        <>
+        <div>
             <h1>{heading}</h1>
-            <ul className="list-group">
+            <ul className="ListGroupComp">
                 {messagebetter}
                 {items.map((item, index) =>
                 <li key={index}
@@ -31,7 +29,7 @@ function ListGroup({items, heading}: Props){
                 </li>)}
             </ul>
             <h4>Total queried items: {items.length}</h4>
-        </>);
+        </div>);
 }
 
 export default ListGroup;

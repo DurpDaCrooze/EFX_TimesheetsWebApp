@@ -1,21 +1,13 @@
 import Message from './components/Message';
 import ListGroup from './components/ListGroup';
+import HeaderComp from './components/HeaderComp';
+import BodyComp from './components/BodyComp';
 
 function App(){
 
-  const items = [
-        'New York',
-        'Los Angeles',
-        'Chicago',
-        'Houston',
-        'Phoenix',
-        'Philadelphia',
-        'San Antonio',
-        'San Diego'
-    ]
-
-  return (<div>
-    <ListGroup heading="Test!" items={items}/>
+  return (<div className="App">
+    <HeaderComp/>
+    <BodyComp/>
   </div>)
 }
 

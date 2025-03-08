@@ -1,5 +1,69 @@
+*{
+    font-family: "JetBrains Mono", monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+.App{
+    height: 100vh;
+}
+
 .active{
     background-color: blue;
     color: white;
     font-weight: bold;
 }
+
+.header{
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+
+.SideHeaderComp{
+    display: flex;
+    width: 100px;
+    height: 100%;
+    background-color: white;
+    border-right: 2pt solid #8D8D8D;
+}
+
+.BodyComp{
+    display: flex;
+    height: 100%;
+}
+
+.InnerBodyComp{
+    background-color: #E9E9E9;
+    width: 100%;
+    padding: 25px;
+
+}
+
+.ListGroupComp{
+    list-style-type: none;
+}
+
+/* Database Styling*/
+
+.DatabaseComp{
+    background-color: white;
+    height: 100%;
+    border: 2pt solid #8D8D8D;
+    border-radius: 9px;
+    padding: 0px;
+}
+
+.DatabaseHeader{
+    margin: 20px;
+}
+
+.DatabaseBody{
+
+}
+
+/*-------------------------------------------------------------------------*/
