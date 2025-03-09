@@ -1,7 +1,7 @@
 function HeaderComp(){
     return (
         <div className="header">
-            <h1>ExtremeFX Admin</h1>
+            <h3>ExtremeFX Admin</h3>
         </div>
     )
 }
